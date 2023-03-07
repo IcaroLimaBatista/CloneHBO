@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(4, 0, 19);
+}
+
+header nav{
+    display: inline-flex;
+}
+
+header nav img{
+    width: 18vh;
+    height: 3vh;
+    margin-left: 3vh;
+    margin-top: 1.5vh;
+}
+
+.links-nav{
+    margin-top:1.5vh;
+    margin-left: 120vh;
+}
+
+.links-nav a{
+    font-weight: 900;
+    font-size: small;
+}
+
+.links-nav button{
+    width: 18vh;
+    height: 4vh;
+    color: white;
+    background-color: rgb(174, 0, 255);
+    border: 0px;
+    border-radius: 10vh;
+    transition: .5s;
+}
+
+.links-nav button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+}
+
+
+.links-nav button a{
+    margin-left: 20px;
+}
+
+header nav a{
+    color: rgb(255, 255, 255);
+    padding-right: 3vh;
+    text-decoration: none;
+}
+
+.container-video{
+    width: 100%;
+    height: 98vh;
+    background-image: linear-gradient(black, rgb(6, 0, 27));
+}
+
+.text-video{
+    padding-top: 50vh;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.economize-textvideo{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.text-video h2{
+    color: rgb(228, 0, 228);
+}
+
+.text-video h3{
+    font-size: 8vh;
+}
+
+.text-video h4{
+    display: inline-block;
+    width: 400px;
+    background-image: linear-gradient(to left, rgb(35, 0, 90), rgb(195, 0, 255));
+}
+
+.assinar{
+    margin-top: 2vh;
+}
+
+.assinar button{
+    width: 20vh;
+    height: 4vh;
+    background-color: rgb(141, 2, 206);
+    border: 0px;
+    border-radius: 10vh;
+    transition: .5s;
+}
+
+.assinar button:hover{
+    cursor: pointer;
+    border: 3px solid rgb(141, 2, 206);
+    background-color: black;
+    color: white;
+}
+
+.assinar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.assinar p{
+    color: rgb(255, 255, 255);
+    font-size: 2vh;
+    margin-top: 1vh;
+}
