@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+body{
+    background-color: red;
+    overflow-x: hidden;
+}
+
 header{
     width: 100%;
     height: 7vh;
@@ -120,4 +125,158 @@ header nav a{
     color: rgb(255, 255, 255);
     font-size: 2vh;
     margin-top: 1vh;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+main{
+    width: 100%;
+    margin-top: 798px;
+    background-image:linear-gradient(rgb(0, 0, 29), rgb(48, 0, 77));;
+}
+
+#planos{
+    color: white;
+}
+
+.text-planos h3{
+   text-align: center;
+   padding-top: 70px;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.text-planos h4{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.list-planos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-planos li{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.list-planos ul {
+    list-style: none;
+}
+
+.list-planos ul li::before {
+    content: '\2022';
+    margin: 0 2px;
+    color: blueviolet;
+    padding-right: 10px;
+}
+
+.cards{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.card-3m, .card-12m, .card-1m{
+    width: 400px;
+    height: 350px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    background-image: linear-gradient(to top, rgba(2, 0, 112, 0.014), rgba(3, 13, 156, 0.212)) ;
+    border-radius: 10px;
+}
+
+.card-12m{
+    border: 3px solid blueviolet;
+}
+
+.economize{
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    position: relative;
+    bottom: 65px;
+    background-color: blueviolet;
+    background-image: linear-gradient(to top, rgba(2, 0, 112, 0.014), rgba(3, 13, 156, 0.212)) ;
+    border-radius: 20px;
+}
+
+.economize h3{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.card-3m p, .card-12m p, .card-1m p{
+    font-size: 20px;
+    font-weight: none;
+
+}
+
+.card-3m h3, .card-12m h3, .card-1m h3{
+    font-weight: 900;
+    padding-bottom: 10px;
+
+}
+
+.cards button{
+    width: 280px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(141, 2, 206);
+    color: white;
+    transition: .5s;
+}
+
+.cards button:hover{
+    cursor: pointer;
+    border: 3px solid rgb(141, 2, 206);
+    background-color: black;
+}   
+
+#aviso-cards{
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+
+    header, nav, .container-video, .text-video h4{
+        width:100%
+    }
+    
+    header nav button{
+        display: none;
+    }
+
+    header nav a{
+        display: none;
+        color: black;
+    }
+
+    nav{
+        height: 100%;
+    }
+
+    .cards{
+        display: block;
+    }
+    
+    .card-3m, .card-12m, .card-1m{
+        width: 100%;
+        height: 350px;
+        padding-top: 50px;
+        text-align: center;
+        font-size: 30px;
+        background-image: linear-gradient(to top, rgba(2, 0, 112, 0.014), rgba(3, 13, 156, 0.212)) ;
+        border-radius: 10px;
+    }
 }
