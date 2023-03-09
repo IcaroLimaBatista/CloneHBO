@@ -131,7 +131,7 @@ header nav a{
 
 main{
     width: 100%;
-    margin-top: 798px;
+    padding-top: 798px;
     background-image:linear-gradient(rgb(0, 0, 29), rgb(48, 0, 77));;
 }
 
@@ -188,11 +188,8 @@ main{
     text-align: center;
     font-size: 30px;
     background-image: linear-gradient(to top, rgba(2, 0, 112, 0.014), rgba(3, 13, 156, 0.212)) ;
-    border-radius: 10px;
-}
-
-.card-12m{
     border: 3px solid blueviolet;
+    border-radius: 10px;
 }
 
 .economize{
@@ -247,6 +244,12 @@ main{
     padding-bottom: 100px;
 }
 
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(37, 0, 78);
+}
+
 @media (max-width: 480px) {
 
     header, nav, .container-video, .text-video h4{
@@ -257,9 +260,9 @@ main{
         display: none;
     }
 
-    header nav a{
-        display: none;
-        color: black;
+    .links-nav{
+        margin-left: 100px;
+        margin-top: 13px;
     }
 
     nav{
@@ -278,5 +281,16 @@ main{
         font-size: 30px;
         background-image: linear-gradient(to top, rgba(2, 0, 112, 0.014), rgba(3, 13, 156, 0.212)) ;
         border-radius: 10px;
+    }
+
+    .economize{
+        display: inline-block;
+        width: 250px;
+        height: 40px;
+        position: relative;
+        bottom: 35px;
+        background-color: blueviolet;
+        background-image: linear-gradient(to top, rgba(2, 0, 112, 0.014), rgba(3, 13, 156, 0.212)) ;
+        border-radius: 20px;
     }
 }
