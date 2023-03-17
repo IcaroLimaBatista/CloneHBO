@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(57, 0, 114), rgb(10, 1, 100), rgb(57, 0, 114));
+    background-size: 150vh;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 7vh;
+    background: rgb(33, 0, 54);
+}
+
+/* ESTILIZAÇÃO DA NAV DO HEADER */
+
+header nav{
+    display: flex;
+    justify-content:right;
+    padding-top: 2vh;
+
+}
+
+.link-nav{
+    display: flex;
+    align-items: center;
+}
+
+.link-nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 50px;
+    transition: .5s;
+}
+
+.link-nav a:hover{
+    color: aqua;
+}
+
+header nav img{
+    width: 15vh;
+    height: 2.5vh;
+    margin-right: 550px;
+}
+
+/* ---- FIM DA ESTILIZAÇÃO DA NAV DO HEADER ----*/
+
+/* FIM DO HEADER */
+
+/* MAIN */
+
+/* TEXTOS ACIMA DOS CARDS E PLANO ESCOLHIDO*/
+
+.opcao-escolhida{
+    width: 100vh;
+    height: 9vh;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 20%;
+    padding-top: 3vh;
+    padding-left: 3vh;
+    border-radius: 1vh;
+    background-color: rgba(35, 0, 68, 0.671);
+    color: white;
+
+}
+
+.texts-escolha{
+    display: flex;
+}
+
+.texts-escolha button{
+    cursor: pointer;
+    width: 90px;
+    height: 20px;
+    margin-left: 3vh;
+    border: none;
+    border-radius: 10vh;
+    background-color: rgba(240, 248, 255, 0.048);
+    color: white;
+}
+
+#preco-mes{
+    margin-left: 50vh;
+}
+
+.texts {
+    margin-top: 6vh;
+    text-align: center;
+    color: rgb(231, 231, 231);
+}
+
+.texts h3{
+    font-weight: 100;
+}
+
+.texts h2{
+    margin-top: 5vh;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.texts p{
+    margin-top: 3vh;
+    font-weight: 100;
+}
+
+/* FORMULARIO */
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+form input{
+    border: none;
+    border-bottom: 2px solid rgb(128, 128, 128);
+    margin-bottom: 5vh;
+    font-size: 3vh;
+    background-color: transparent;
+    color: white;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-bottom: 2px solid blueviolet;
+}
+
+#nome, #sobrenome{
+    width: 38vh;
+}
+
+#sobrenome{
+    margin-left: 4vh;
+}
+
+#email, #confirmar-email, #senha{
+    display: block;
+    width: 80vh;
+    height: 5vh;
+}
+
+.container-form button{
+    cursor: pointer;
+    width: 40%;
+    height: 17%;
+    margin-left: 30%;
+    border: none;
+    border-radius: 10vh;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    transition: .5s;
+}
+
+.container-form button:hover{
+    background-color: rgb(167, 72, 255);
+}
+
+/* FIM DO MAIN */
+
+@media (min-width: 280px) and (max-width: 480px){
+    
+    /* HEADER */
+    header nav img{
+        width: 15vh;
+        height: 2.5vh;
+        margin-right: 20%;
+    }
+
+    /* TEXTOS ACIMA DOS CARDS E PLANO ESCOLHIDO*/
+
+    .opcao-escolhida{
+        width: 100%;
+        height: 20vh;
+        margin-left: 0%; 
+        padding-left: 0;
+    }
+
+    .texts-escolha{
+        display: inline-block;
+        padding-left: 30%;
+    }
+
+    /* FORMULARIO */
+
+    #preco-mes{
+        margin-top: 3vh;
+        margin-left: 0vh;
+    }
+
+    form{
+        display: inline-block;
+    }
+
+    #nome, #sobrenome{
+        width: 100%;
+    }
+    
+    #sobrenome{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #email, #confirmar-email, #senha{
+        display: block;
+        width: 100%;
+        height: 5vh;
+    }
+
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+
+    /* HEADER */
+    header nav img{
+        width: 15vh;
+        height: 2.5vh;
+        margin-right: 30%;
+    }
+
+    /* TEXTOS ACIMA DOS CARDS E PLANO ESCOLHIDO*/
+    
+    .opcao-escolhida{
+        width: 100%;
+        margin-left: 0%; 
+        padding-left: 0;
+    }
+
+    .texts-escolha{
+        padding-left: 10%;
+    }
+
+    #preco-mes{
+        margin-top: .5vh;
+        margin-left: 10vh;
+    }
+
+    /* FORMULARIO */
+
+    form{
+        display: inline-block;
+    }
+
+    #nome, #sobrenome{
+        width: 100%;
+    }
+    
+    #sobrenome{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #email, #confirmar-email, #senha{
+        display: block;
+        width: 100%;
+        height: 5vh;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    /* HEADER */
+    header nav img{
+        width: 15vh;
+        height: 2.5vh;
+        margin-right: 33%;
+    }    
+
+    .opcao-escolhida{
+        width: 80vh;
+        margin-left: 23%;
+    }
+
+    #preco-mes{
+        margin-top: .5vh;
+        margin-left: 10vh;
+    }
+
+    /* FORMULARIO */
+
+    form{
+            display: inline-block;
+    }
+    
+    #nome, #sobrenome{
+            width: 100%;
+    }
+        
+    #sobrenome{
+            width: 100%;
+            margin-left: 0;
+    }
+        
+    #email, #confirmar-email, #senha{
+            display: block;
+            width: 100%;
+            height: 5vh;
+    }
+
+
+}

@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.back-color{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgb(60, 1, 119), rgb(15, 0, 31));
+    background-size: 150vh;
+
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 7vh;
+}
+
+ header img{
+    width: 15vh;
+    height: 2.5vh;
+    margin-top: 2vh;
+    margin-left: 80vh;
+}
+/* FIM DO HEADER */
+
+/* MAIN */
+
+/* TEXTOS ACIMA DO FORM*/
+
+main h2{
+    margin-top: 10vh;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 5vh;
+}
+
+.container{
+    width: 110vh;
+    height: 60vh;
+    margin-top: 5vh;
+    margin-left: 30vh;
+    border-radius: 2vh;
+}
+
+.text {
+    padding-top: 6vh;
+    margin-left: 14vh;
+    margin-bottom: 3vh;
+    color: rgb(231, 231, 231);
+}
+
+
+
+/* FORMULARIO */
+
+form input{
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: .5vh;
+    margin-bottom: 3vh;
+    margin-left: 13vh;
+    padding-left: 3vh;
+    font-size: 2vh;
+    background-color: transparent;
+    color: white;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#email, #senha{
+    display: block;
+    width: 90vh;
+    height: 8vh;
+}
+
+.entrar button{
+    cursor: pointer;
+    width: 15vh;
+    height: 5vh;
+    margin-left: 13vh;
+    margin-right: 3vh;
+    border: none;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.103);
+    color: white;
+    transition: .5s;
+}
+
+.entrar button:hover{
+    background-color: rgba(0, 0, 0, 0.548);
+    border: 3px solid rgb(167, 72, 255);
+}
+
+.entrar a{
+    font-size: 2vh;
+    text-decoration: none;
+    color: rgb(151, 86, 255);
+}
+
+/* FIM DO MAIN */
+
+@media (min-width: 280px) and (max-width: 480px){
+    
+    .back-color{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to top, rgb(60, 1, 119), rgb(15, 0, 31));
+    }
+
+    /* HEADER */
+    header img{
+        width: 15vh;
+        height: 2.5vh;
+        margin-right: 20%;
+        margin-left: 0;
+    }
+
+    .container{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .text {
+        margin-left: 0vh;
+    }
+
+    form input{
+        margin-left: 0vh;
+        padding-left: 3vh;
+        font-size: 2vh;
+    }
+
+    #email, #senha{
+        display: block;
+        width: 100%;
+        height: 4vh;
+    }
+
+    .entrar button{
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        height: 5vh;
+        margin-left: 0vh;
+        margin-right: 3vh;
+        border: none;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.103);
+        color: white;
+        transition: .5s;
+    }
+
+    .entrar a{
+        margin-left: 8vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .back-color{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to top, rgb(60, 1, 119), rgb(15, 0, 31));
+    }
+
+    /* HEADER */
+    header img{
+        width: 15vh;
+        height: 2.5vh;
+        margin-right: 20%;
+        margin-left: 0;
+    }
+
+    .container{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .text {
+        margin-left: 0vh;
+    }
+
+    form input{
+        margin-left: 0vh;
+        padding-left: 3vh;
+        font-size: 2vh;
+    }
+
+    #email, #senha{
+        display: block;
+        width: 100%;
+        height: 4vh;
+    }
+
+    .entrar button{
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        height: 5vh;
+        margin-left: 0vh;
+        margin-right: 3vh;
+        border: none;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.103);
+        color: white;
+        transition: .5s;
+    }
+
+    .entrar a{
+        margin-left: 8vh;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .back-color{
+        width: 100%;
+        height: 120vh;
+        background: linear-gradient(to top, rgb(60, 1, 119), rgb(15, 0, 31));
+    }
+
+    /* HEADER */
+    header img{
+        width: 15vh;
+        height: 2.5vh;
+        margin-right: 20%;
+        margin-left: 0;
+    }
+
+    .container{
+        width: 100%;
+        margin-left: 0vh;
+    }
+
+    .text {
+        margin-left: 30vh;
+    }
+
+    form input{
+        margin-left: 30vh;
+        padding-left: 3vh;
+        font-size: 2vh;
+    }
+
+    #email, #senha{
+        display: block;
+        width: 70vh;
+        height: 4vh;
+    }
+
+    .entrar button{
+        cursor: pointer;
+        width: 20vh;
+        height: 5vh;
+        margin-left: 30vh;
+        margin-right: 3vh;
+        border: none;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.103);
+        color: white;
+        transition: .5s;
+    }
+
+    .entrar a{
+        margin-left: 8vh;
+    }  
+
+}
