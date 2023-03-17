@@ -13,7 +13,7 @@ function criarConta(){
         btnCriarConta.disabled = true;
     }
 
-    if (senha.value.length < 15){
+    if (senha.value.length < 5){
         btnCriarConta.disabled = true;
     }
 }
